@@ -1,0 +1,60 @@
+
+    <div class="row">
+          <div class="col-xs-8">
+            <div class="dropdown pull-right" style="width: 28rem;">
+                <a class="dropdown-toggle  btn btn-primary" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i> Group Wishlist
+                    {{# if session.cart.totalItems }}
+                    <span>({{session.cart.totalItems}})</span>
+                    {{/if}}
+                </a>
+                {{# if session.cart.totalItems }}
+                <div class="dropdown-menu">
+                    <div class="cart">
+                        {{# each session.cart.items }}
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <img class="img-tog" src={{ this.item.title }}>
+                            </div>
+                            <div class="col-xs-4 text-right">
+                                <span class="badge">{{ this.quantity }}</span>
+                            </div>
+                            <div class="col-xs-4 text-right">
+                              Rs {{ this.price }}
+                            </div>
+                        </div>
+                        {{/each}}
+                        <div class="row">
+                            <div class="text-right">
+                                <div class="totalPrice">Total:Rs {{ session.cart.totalPrice }} </div>
+                                <a href="/cart/" class="btn btn-success">Procceed</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+
+
+
+<section class="white-section">
+<div class="row">
+{{# each products }}
+<div class="blog-column col-lg-3 col-md-6">
+    <div class="card bg-light" style="width: 28rem;">
+      <img src={{ this.title }} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="description">{{{this.description}}}</h4>
+          <h4 class="price">Rs {{{this.price}}}</h4>
+        <a href="/add/{{ this.id }}" class="btn btn-info" role="button">🤍 Group Wishlist</a>
+        <a href="#" class="btn btn-info" role="button">🤍 Your Wishlist</a>
+        <a href="#" class="btn btn-primary" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a>
+      </div>
+    </div>
+</div>
+  {{/each}}
+</div>
+<br><br>
+</section>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Myntra</title>
+
+    <!-- CSS Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="style.css">
+    
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-option">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <img class="logo" src="images/myntra-logo.svg" alt="myntra logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active nav-main-option" aria-current="page" href="#">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-main-option" href="#">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-main-option" href="#">Kids</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-main-option" href="#">Home & Living</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-main-option" href="#">Offers</a>
+            </li>
+            
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2 search-option" type="search" placeholder="Search for products, brands and more" aria-label="Search">
+            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+          </form>
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <span><i class="fas fa-user nav-icon"></i></span>
+                  <a class="nav-link nav-details" href="#footer">Profile</a>
+              </li>
+              <li class="nav-item">
+                  <span><i class="far fa-heart nav-icon"></i></span>
+                  <a class="nav-link nav-details" href="#pricing">Wishlist</a>
+              </li>
+              <li class="nav-item">
+                  <span><i class="fas fa-shopping-bag nav-icon"></i></span>
+                  <a class="nav-link nav-details" href="#cta">Bag</a>
+              </li>
+              <li class="nav-item">
+                  <span><i class="fas fa-users nav-icon"></i></span>
+                <a class="nav-link nav-details" href="#cta">Collab</a>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+    </nav>
+
+    <div>
+      <img class="image1" src="images/image1.jpg" alt="women collection"/>
+    </div>
+
+    <div>
+      <img class="image2" src="images/image2.jpg" alt="shoes"/>
+    </div>
+
+    <div class="chatbox-top">
+      <div class="group-icon"></div>
+      <i class="fas fa-arrow-left"></i>
+      <span class="group-initial">G</span>
+      <span class="group-name">Group 1<span>
+      <i class="fas fa-arrows-alt-h"></i>
+      <i class="fas fa-user-plus"></i>
+      <i class="far fa-times-circle"></i>
+    </div>
+    <div class="chatbox">
+      <div class="chat-option">Chat</div>
+      <div class="friends-option">Friends</div>
+      <div class="wishlist-option">Wishlist</div>
+      
+      <div class="chat-msg">
+        <h6>Welcome!</h6>
+        <ul class="chat-content">
+          <li>Add friends by sending them the group link.</li>
+          <li>Chat and share pages you’ve found.</li>
+          <li>Make changes to your settings on the Friends tab.</li>
+          <li>Save items in your group wishlist.</li>
+        </ul>
+      </div>
+
+      <div>
+        <i class="fas fa-external-link-alt"></i>
+        <input class="input-msg" type="text" placeholder="Write your message.....">
+        <i class="fas fa-paper-plane"></i>
+      </div>
+    </div>
+
+  </body>
+</html>
